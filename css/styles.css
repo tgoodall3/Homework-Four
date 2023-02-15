@@ -1,0 +1,519 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+.site-Container {
+  max-width: 1100px;
+  min-height: 500px;
+}
+
+@font-face {
+  font-family: gillsansbold;
+  src: url(../fonts/GillSans-Bold.ttf);
+}
+nav {
+  height: 0;
+  top: 50px;
+  left: 300px;
+  position: fixed;
+  background-color: transparent;
+  width: 800px;
+  max-width: 800px;
+  min-width: 100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav .links {
+  height: 42px;
+  width: 300px;
+  white-space: nowrap;
+}
+nav .links a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: gillsansbold;
+}
+nav .links span {
+  margin-left: 5px;
+  color: white;
+}
+nav .logo {
+  border: white 2px solid;
+  height: 42px;
+  width: 80px;
+}
+nav .logo span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  margin-left: 17px;
+  font-size: 20px;
+  font-family: gillsansbold;
+  white-space: nowrap;
+  color: white;
+  width: 92px;
+  height: 42px;
+}
+
+@font-face {
+  font-family: gillsansbold;
+  src: url(../fonts/GillSans-Bold.ttf);
+}
+@font-face {
+  font-family: gillsanslight;
+  src: url(../fonts/GillSans-Light.ttf);
+}
+@font-face {
+  font-family: primanovacondensed;
+  src: url(../fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    position: fixed;
+    top: 30px;
+    left: -200px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav .links {
+    margin-left: 10px;
+  }
+  .hero .subHeader span {
+    font-size: 10px;
+  }
+  .promo-trips {
+    margin-left: 25%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .booking .header {
+    margin-left: 250px;
+  }
+  .booking .book {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 250px;
+  }
+  .booking .columns {
+    margin-left: 150px;
+  }
+  .booking .rowThree {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 250px;
+  }
+  .booking .message input {
+    margin-left: 250px;
+  }
+}
+.hero {
+  width: 100%;
+  height: 500px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.527)), to(rgba(0, 0, 0, 0.5))), url(../images/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero .header {
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-family: gillsanslight;
+  color: white;
+}
+.hero .subHeader {
+  font-size: 20px;
+  margin-bottom: 20px;
+  width: 750px;
+  text-align: center;
+  color: white;
+}
+.hero .subHeader span {
+  font-family: gillsansbold;
+}
+.hero .button button {
+  border: none;
+  background-color: #79ADDC;
+  margin-top: 20px;
+  width: 121px;
+  height: 40px;
+  font-family: gillsansbold;
+  color: white;
+}
+
+.promo-trips {
+  margin-top: -50px;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.promo-trips .isreal {
+  position: relative;
+  width: 304px;
+  height: 236px;
+}
+.promo-trips .isreal .image img {
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 304px;
+  width: 236px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.promo-trips .isreal .text {
+  position: absolute;
+  top: 40%;
+  left: 22%;
+  font-size: 60px;
+  font-family: primanovacondensed;
+  color: white;
+}
+.promo-trips .isreal .text .subText {
+  position: absolute;
+  top: 80%;
+  left: -5%;
+  font-size: 30px;
+  white-space: nowrap;
+}
+.promo-trips .isreal button {
+  background-color: #79ADDC;
+  height: 40px;
+  width: 133px;
+  position: absolute;
+  bottom: 0%;
+  left: 18%;
+  font-size: 20px;
+  border: none;
+  font-family: gillsansbold;
+  color: white;
+}
+.promo-trips .USA {
+  position: relative;
+  width: 304px;
+  height: 236px;
+}
+.promo-trips .USA .image {
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
+}
+.promo-trips .USA .image img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 304px;
+  width: 236px;
+}
+.promo-trips .USA .text {
+  position: absolute;
+  top: 40%;
+  left: 22%;
+  font-size: 60px;
+  color: white;
+  font-family: primanovacondensed;
+}
+.promo-trips .USA .text .subText {
+  position: absolute;
+  top: 80%;
+  left: -6%;
+  font-size: 30px;
+  white-space: nowrap;
+}
+.promo-trips .USA button {
+  background-color: #79ADDC;
+  height: 40px;
+  width: 133px;
+  position: absolute;
+  bottom: 0%;
+  left: 18%;
+  font-size: 20px;
+  border: none;
+  font-family: gillsansbold;
+  color: white;
+}
+.promo-trips .Australia {
+  position: relative;
+  width: 304px;
+  height: 236px;
+}
+.promo-trips .Australia .image {
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
+}
+.promo-trips .Australia .image img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 304px;
+  width: 236px;
+}
+.promo-trips .Australia .text {
+  position: absolute;
+  top: 40%;
+  left: 13%;
+  font-size: 60px;
+  font-family: primanovacondensed;
+  color: white;
+}
+.promo-trips .Australia .text .subText {
+  position: absolute;
+  top: 80%;
+  left: 15%;
+  font-size: 30px;
+  white-space: nowrap;
+}
+.promo-trips .Australia button {
+  background-color: #79ADDC;
+  height: 40px;
+  width: 133px;
+  position: absolute;
+  bottom: 0%;
+  left: 18%;
+  font-size: 60px;
+  font-size: 20px;
+  border: none;
+  font-family: gillsansbold;
+  color: white;
+}
+
+.booking {
+  margin-top: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+}
+.booking .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  font-size: 60px;
+  margin-bottom: 50px;
+  font-family: primanovacondensed;
+}
+.booking form {
+  width: 818px;
+  margin: 0 auto;
+}
+.booking form .inputs {
+  margin: 10px;
+}
+.booking form .inputs .book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.booking form .inputs .book .rowOne {
+  margin-bottom: 15px;
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.booking form .inputs .book .rowOne input {
+  height: 58px;
+  width: 344px;
+  margin-bottom: 10px;
+  color: black;
+  font-family: gillsansbold;
+  padding: 10px;
+  border: #79ADDC 1px solid;
+}
+.booking form .inputs .book .rowTwo {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.booking form .inputs .book .rowTwo input {
+  height: 58px;
+  width: 453px;
+  margin-bottom: 10px;
+  font-family: gillsansbold;
+  padding: 10px;
+  color: black;
+  border: #79ADDC 1px solid;
+}
+.booking form .inputs .columns {
+  margin-bottom: 15px;
+}
+.booking form .inputs .columns input {
+  margin-left: 100px;
+  width: 698px;
+  height: 58px;
+  margin-bottom: 10px;
+  border: #79ADDC 1px solid;
+}
+.booking form .inputs .columns span {
+  font-family: gillsansbold;
+  margin-top: 20px;
+}
+.booking form .inputs .rowThree {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.booking form .inputs .rowThree input {
+  width: 103px;
+  height: 58px;
+  font-family: gillsansbold;
+  padding: 10px;
+  border: #79ADDC 1px solid;
+}
+.booking form .inputs .rowThree span {
+  margin-top: 20px;
+  font-family: gillsansbold;
+  color: black;
+}
+.booking form .inputs .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.booking form .inputs .message input {
+  width: 818px;
+  height: 192px;
+  color: black;
+  font-family: gillsansbold;
+  padding: 10px;
+  border: #79ADDC 1px solid;
+}
+.booking form button {
+  width: 818px;
+  height: 61px;
+  background-color: #79ADDC;
+  border: none;
+  font-family: gillsansbold;
+  color: white;
+  border-radius: 16px;
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: 90px;
+  height: 100px;
+  width: 100%;
+  background-color: #79ADDC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .copyright span {
+  font-family: gillsansbold;
+  font-size: 12px;
+  color: white;
+}
+footer .logo {
+  border: white 2px solid;
+  height: 42px;
+  width: 80px;
+}
+footer .logo span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  margin-left: 17px;
+  font-size: 20px;
+  font-family: gillsansbold;
+  white-space: nowrap;
+  color: white;
+  width: 92px;
+  height: 42px;
+}
+footer .socials img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90px;
+  width: 150px;
+}
